@@ -22,27 +22,27 @@ h2{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em
 @media(max-width:640px){.axis,.cards,.money{grid-template-columns:1fr}}</style></head><body>
 <div class="top"><div><h1>RDNI Dashboard &mdash; Recharge Done, No Internet</h1>
 <div class="sub">Is every paying customer online, and are we paying the ISP partner for the right customers?</div></div>
-<div class="sub">149,733 customers &middot; updated 01 Jul 2026 &middot; <span style="color:var(--green)">&#9679; auto-refreshed</span></div></div>
+<div class="sub">149,734 customers &middot; updated 01 Jul 2026 &middot; <span style="color:var(--green)">&#9679; auto-refreshed</span></div></div>
 <div class="wrap">
 <div class="axis"><div></div><div class="axhead">Online</div><div class="axhead">Offline</div>
 <div class="rowlbl">Paid</div>
-<div class="box green"><div class="tag">Healthy</div><div class="val">78,853</div><div class="pct">52.7%</div><div class="desc">Paying and online.</div></div>
-<div class="box red"><div class="tag">Paid but offline</div><div class="val">2,902</div><div class="pct">1.9%</div><div class="desc">Paying, not online right now.</div></div>
+<div class="box green"><div class="tag">Healthy</div><div class="val">78,852</div><div class="pct">52.7%</div><div class="desc">Paying and online.</div></div>
+<div class="box red"><div class="tag">Paid but offline</div><div class="val">2,904</div><div class="pct">1.9%</div><div class="desc">Paying, not online right now.</div></div>
 <div class="rowlbl">Not paid</div>
-<div class="box amber"><div class="tag">Not paid but online</div><div class="val">5,232</div><div class="pct">3.5%</div><div class="desc">Online without a live plan.</div></div>
-<div class="box grey"><div class="tag">Correctly off</div><div class="val">62,746</div><div class="pct">41.9%</div><div class="desc">Not paying, not online.</div></div></div>
+<div class="box amber"><div class="tag">Not paid but online</div><div class="val">5,225</div><div class="pct">3.5%</div><div class="desc">Online without a live plan.</div></div>
+<div class="box grey"><div class="tag">Correctly off</div><div class="val">62,753</div><div class="pct">41.9%</div><div class="desc">Not paying, not online.</div></div></div>
 <h2>What needs action</h2>
 <div class="cards">
-<div class="rc"><h3>Paid but offline &mdash; 2,902</h3>
-<div class="li"><span><b>Needs our fix</b> &mdash; plan not migrated / ISP not renewed</span><span class="n red">238</span></div>
-<div class="li"><span>Router off &mdash; plan &amp; ISP fine on our side</span><span class="n mut">2,664</span></div></div>
-<div class="rc"><h3>Not paid but online &mdash; 5,232</h3>
-<div class="li"><span>Leftover ISP coverage &mdash; expires soon</span><span class="n mut">5,107</span></div>
-<div class="li"><span><b>Online 30+ days after plan ended</b> &mdash; free usage</span><span class="n amber">125</span></div></div></div>
+<div class="rc"><h3>Paid but offline &mdash; 2,904</h3>
+<div class="li"><span><b>Needs our fix</b> &mdash; plan not migrated / ISP not renewed <span style="color:var(--mut)">(click to download list)</span></span><span><a href="https://metabase.wiom.in/question/11524" target="_blank" style="color:#ff6b70;font-weight:700;text-decoration:underline;cursor:pointer">237 &#8595;</a></span></div>
+<div class="li"><span>Router off &mdash; plan &amp; ISP fine on our side</span><span class="n mut">2,667</span></div></div>
+<div class="rc"><h3>Not paid but online &mdash; 5,225</h3>
+<div class="li"><span>Leftover ISP coverage &mdash; expires soon</span><span class="n mut">5,101</span></div>
+<div class="li"><span><b>Online 30+ days after plan ended</b> &mdash; free usage</span><span class="n amber">124</span></div></div></div>
 <h2>ISP commission &mdash; are we paying for the right customers?</h2>
 <div class="money">
-<div class="m"><div class="l">Paid for a paying, online customer</div><div class="v" style="color:#4ade80">53,108</div></div>
-<div class="m"><div class="l">Paid for lapsed / offline (coverage tail)</div><div class="v" style="color:#f0b429">5,953</div></div>
+<div class="m"><div class="l">Paid for a paying, online customer</div><div class="v" style="color:#4ade80">53,118</div></div>
+<div class="m"><div class="l">Paid for lapsed / offline (coverage tail)</div><div class="v" style="color:#f0b429">5,960</div></div>
 <div class="m"><div class="l">Redundant tickets (over-buying)</div><div class="v" style="color:#4ade80">0</div></div></div>
-<div class="note"><b>Paid</b> = plan valid today (TRUM). <b>Online</b> = device seen in last 24h. <b>Commission</b> = ISP recharge paid to the partner. Click a tile in Metabase for the customer list. Auto-refreshes daily.</div>
+<div class="note"><b>Paid</b> = plan valid today (TRUM). <b>Online</b> = device seen in last 24h. <b>Commission</b> = ISP recharge paid to the partner. Click <b>Needs our fix</b> to open the customer list and export CSV (Wiom login). Auto-refreshes daily.</div>
 </div></body></html>
