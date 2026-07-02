@@ -1,8 +1,8 @@
- name: refresh
-  on:
+name: refresh
+  "on":
+    workflow_dispatch:
     schedule:
-      - cron: '30 2 * * *'      # 08:00 IST daily
-    workflow_dispatch: {}
+      - cron: "30 2 * * *"
   permissions:
     contents: write
   jobs:
@@ -12,7 +12,7 @@
         - uses: actions/checkout@v4
         - uses: actions/setup-python@v5
           with:
-            python-version: '3.11'
+            python-version: "3.11"
         - name: Regenerate dashboard
           env:
             METABASE_KEY: ${{ secrets.METABASE_KEY }}
@@ -22,5 +22,5 @@
             git config user.name "rdni-bot"
             git config user.email "actions@users.noreply.github.com"
             git add index.html
-            git diff --staged --quiet || git commit -m "auto-refresh $(date -u +%F)"
+            git diff --staged --quiet || git commit -m "auto-refresh"
             git push
